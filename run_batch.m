@@ -4,6 +4,9 @@
 
 %% 2. run subject-level analyses
 
+% add path to subfunctions
+addpath(fullfile(pwd, 'subfunctions'));
+
 sbj = {'S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','S11'};
 
 % run functions in order
@@ -16,8 +19,6 @@ for s = 1:length(sbj)
     plv_analysis(sbj{s});
     plv_analysis_errors(sbj{s});
 end
-
-% subfunctions: zbaseline_200, zcont_5, split_cf_cl
 
 %% 3. run group-level models
 
