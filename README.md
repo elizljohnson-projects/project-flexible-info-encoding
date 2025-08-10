@@ -7,7 +7,7 @@ These scripts produce the results reported in:
 
 Johnson, EL, Lin, JJ, King-Stephens, D, Weber, PB, Laxer, KD, Saez, I, Girgis, F, D’Esposito, M, Knight, RT, Badre, D. A rapid theta network mechanism for flexible information encoding. _Nature Communications_ 14 (2023). [DOI](https://doi.org/10.1038/s41467-023-38574-7)
 
-Project data are accessible on [OSF](https://doi.org/10.17605/OSF.IO/RX2ZD).
+Project data are accessible on [OSF](https://doi.org/10.17605/OSF.IO/RX2ZD). These data have been prepared for analysis using the [pipeline for iEEG data curation](https://github.com/elizljohnson-projects/pipeline-ieeg-data-curation.git).
 
 Publications or other papers using these scripts and/or data should cite the publication above.
 
