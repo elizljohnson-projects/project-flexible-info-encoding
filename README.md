@@ -16,5 +16,10 @@ Software:
 - Fieldtrip (fieldtrip-20210301; last tested with fieldtrip-20250114) - [download](https://www.fieldtriptoolbox.org/download)
 
 Notes:
-- Data distribution plots were created using raincloud plotting scripts (v2) for MATLAB - [download](https://github.com/RainCloudPlots/RainCloudPlots/tree/master/tutorial_matlab)
+- Open and run the batch script (run_batch) to run through all scripts and reproduce the published results.
+- The subfunctions folder contains the following functions:
+  - zbaseline_200: z-score per-trial time-series data on the baseline using statistical bootstrapping, randomly drawing 200 data points per permutation. This script is task-agnostic.
+  - zcont_5: z-score per-channel continuous data on itself using statistical bootstrapping, randomly drawing 5 data points per permutation. This script is task-agnostic.
+  - split_cf_cl: split the data by condition and trial type. This script is task-specific.
+- Data distribution plots were created using raincloud plotting scripts (v2) for MATLAB - [download](https://github.com/RainCloudPlots/RainCloudPlots/tree/master/tutorial_matlab).
 - Brain data plots were created using BrainNet Viewer (v1.7) for MATLAB - [download](https://www.nitrc.org/projects/bnv).
