@@ -21,27 +21,18 @@ clearvars -except sid
 
 % set directories
 pth = pwd;
-datdir = fullfile(pth, sid, 'hfb'); % output of hfb_analysis
+datdir = fullfile(pth, 'data', sid, 'hfb'); % output of hfb_analysis
 savdir = datdir;
 
 % set number of permutations
 nperm = 1000;
 
 % load data
-tmp = load(fullfile(datdir, 'data_stim_cf'));
-target = tmp.target;
-distractor = tmp.distractor;
-clear tmp
+load(fullfile(datdir, 'data_stim_cf'), 'target', 'distractor');
+load(fullfile(datdir, 'data_stim_cl'), 'load1', 'load2');
 
-tmp = load(fullfile(datdir, 'data_stim_cl'));
-load1 = tmp.load1;
-load2 = tmp.load2;
-clear tmp
-
-chans_stim = load(fullfile(savdir, 'chans_stim'));
-chans_stim = chans_stim.chans_stim;
-chans_resp = load(fullfile(savdir, 'chans_resp'));
-chans_resp = chans_resp.chans_resp;
+load(fullfile(savdir, 'chans_stim'), 'chans_stim');
+load(fullfile(savdir, 'chans_resp'), 'chans_resp');
 
 % select stimulus epoch and task-responsive elecs
 cfg = [];

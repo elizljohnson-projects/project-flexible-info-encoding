@@ -24,7 +24,7 @@ clearvars -except sid
 
 % set directories
 pth = pwd;
-datdir = fullfile(pth, sid);
+datdir = fullfile(pth, 'data', sid);
 savdir = fullfile(datdir, 'hfb');
 mkdir(savdir);
 
@@ -33,8 +33,7 @@ zthr = 1.96;
 dur = 0.05;
 
 % load data
-data = load(fullfile(datdir, sid), 'data');
-data = data.data;
+load(fullfile(datdir, sid), 'data');
 
 srate = data.fsample;
 

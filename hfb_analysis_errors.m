@@ -20,13 +20,12 @@ clearvars -except sid
 
 % set directories
 pth = pwd;
-datdir = fullfile(pth, sid);
+datdir = fullfile(pth, 'data', sid);
 savdir = fullfile(datdir, 'hfb');
 mkdir(savdir);
 
 % load data
-data = load(fullfile(datdir, sid), 'data');
-data = data.data;
+load(fullfile(datdir, sid), 'data');
 
 srate = data.fsample;
 times = str2double(data.trialinfo(:,16:17));
@@ -160,10 +159,8 @@ save(fullfile(savdir, 'data_stim_cf_inc'), 'target', 'distractor');
 clear data_stim
 
 % descriptive stats (subset of hfb_stats for error trials)
-chans_stim = load(fullfile(savdir, 'chans_stim'));
-chans_stim = chans_stim.chans_stim;
-chans_resp = load(fullfile(savdir, 'chans_resp'));
-chans_resp = chans_resp.chans_resp;
+load(fullfile(savdir, 'chans_stim'), 'chans_stim');
+load(fullfile(savdir, 'chans_resp'), 'chans_resp');
 
 % select stimulus epoch and task-responsive elecs
 cfg = [];

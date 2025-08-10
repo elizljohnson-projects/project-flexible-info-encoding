@@ -29,7 +29,7 @@ sbj = {'S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','S11'};
 % construct model data table with data from all subjects
 c = 0;
 for s = 1:length(sbj)
-    datdir = fullfile(pth, sbj{s});
+    datdir = fullfile(pth, 'data', sbj{s});
 
     % load Yeo-7 network data
     load(fullfile(datdir, 'yeo'), 'yeo_key');

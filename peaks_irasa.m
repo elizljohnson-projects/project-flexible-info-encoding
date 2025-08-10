@@ -24,7 +24,7 @@ clearvars -except sid
 
 % set directories
 pth = pwd;
-datdir = fullfile(pth, sid);
+datdir = fullfile(pth, 'data', sid);
 savdir = fullfile(datdir, 'irasa');
 mkdir(savdir);
 
@@ -32,8 +32,7 @@ mkdir(savdir);
 zthr = 1.96;
 
 % load data
-data = load(fullfile(datdir, sid), 'data');
-data = data.data;
+load(fullfile(datdir, sid), 'data');
 
 srate = data.fsample;
 
@@ -42,10 +41,8 @@ cor = cell2mat(data.trialinfo(:,6));
 trialinfo = data.trialinfo;
 
 % select task-responsive elecs
-chans_stim = load(fullfile(savdir, 'hfb', 'chans_stim'));
-chans_stim = chans_stim.chans_stim;
-chans_resp = load(fullfile(savdir, 'hfb', 'chans_resp'));
-chans_resp = chans_resp.chans_resp;
+load(fullfile(savdir, 'chans_stim'), 'chans_stim');
+load(fullfile(savdir, 'chans_resp'), 'chans_resp');
 
 cfg = [];
 cfg.trials = find(cor == 1);

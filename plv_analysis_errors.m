@@ -21,13 +21,13 @@ clearvars -except sid
 
 % set directories
 pth = pwd;
-datdir = fullfile(pth, sid);
+datdir = fullfile(pth, 'data', sid);
 savdir = fullfile(datdir, 'plv');
 mkdir(savdir);
 
 % load data
-data = load(fullfile(datdir, sid), 'data');
-data = data.data;
+load(fullfile(datdir, sid), 'data');
+
 srate = data.fsample;
 
 % select error trials
@@ -35,8 +35,7 @@ cor = cell2mat(data.trialinfo(:,6));
 trialinfo = data.trialinfo;
 
 % load peaks
-osci = load(fullfile(datdir, 'irasa', 'osci'), 'osci');
-osci = osci.osci;
+load(fullfile(datdir, 'irasa', 'osci'), 'osci');
 
 cfg = [];
 cfg.trials = find(cor == 0);
