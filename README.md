@@ -1,2 +1,20 @@
 # project-flexible-info-encoding
-A rapid theta network mechanism for flexible information encoding (2023)
+**A rapid theta network mechanism for flexible information encoding**
+
+Quickly adapting our behavior depends on mechanisms that open and close a metaphorical ‘gate’ to let only relevant information into working memory. Using direct brain recordings in neurosurgical patients (i.e., intracranial EEG/iEEG), we discovered neocortical brain networks that rapidly come in and out of sync to direct this gate – a role previously attributed to a subcortical region called the striatum. Findings reveal a neocortical gating mechanism and demonstrate how human behavior can emerge from interactions across brain networks. Press release by [Northwestern News](https://news.feinberg.northwestern.edu/2023/06/01/study-establishes-fluctuating-gating-mechanisms-supporting-flexible-behavior/).
+
+These scripts produce the results reported in:
+
+Johnson, EL, Lin, JJ, King-Stephens, D, Weber, PB, Laxer, KD, Saez, I, Girgis, F, D’Esposito, M, Knight, RT, Badre, D. A rapid theta network mechanism for flexible information encoding. _Nature Communications_ 14 (2023). [DOI](https://doi.org/10.1038/s41467-023-38574-7)
+
+Project data are accessible on [OSF](https://doi.org/10.17605/OSF.IO/RX2ZD).
+
+Publications or other papers using these scripts and/or data should cite the publication above.
+
+Software:
+- MATLAB 9.7 (R2019b; last tested with R2024b)
+- Fieldtrip (fieldtrip-20210301; last tested with fieldtrip-20250114) - [download](https://www.fieldtriptoolbox.org/download)
+
+Notes:
+- Data distribution plots were created using raincloud plotting scripts (v2) for MATLAB - [download](https://github.com/RainCloudPlots/RainCloudPlots/tree/master/tutorial_matlab)
+- Brain data plots were created using BrainNet Viewer (v1.7) for MATLAB - [download](https://www.nitrc.org/projects/bnv).
