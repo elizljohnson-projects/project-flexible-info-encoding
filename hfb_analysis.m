@@ -13,7 +13,7 @@ function hfb_analysis(sid)
 % Example:
 % hfb_analysis('S1')
 %
-% Copyright (c) 2023
+% Copyright (c) 2022
 % EL Johnson, PhD
 
 % path to fieldtrip spm2 directory (replace with your path to fieldtrip 

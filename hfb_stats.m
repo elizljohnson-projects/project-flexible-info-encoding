@@ -14,7 +14,7 @@ function hfb_stats(sid)
 % Example:
 % hfb_stats('S1')
 %
-% Copyright (c) 2023
+% Copyright (c) 2022
 % EL Johnson, PhD
 
 clearvars -except sid

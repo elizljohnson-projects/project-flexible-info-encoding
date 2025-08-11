@@ -17,7 +17,7 @@ function peaks_irasa(sid)
 % Example:
 % peaks_irasa('S1')
 %
-% Copyright (c) 2023
+% Copyright (c) 2022
 % EL Johnson, PhD
 
 clearvars -except sid
