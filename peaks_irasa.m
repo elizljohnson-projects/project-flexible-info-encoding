@@ -3,7 +3,7 @@ function peaks_irasa(sid)
 % correct trials using IRASA method. Detect peaks using statistical
 % bootstrapping.
 %
-% Analysis described in: Wen, H, Liu, Z. Separating fractal and oscillatory 
+% IRASA described in: Wen, H, Liu, Z. Separating fractal and oscillatory 
 % components in the power spectrum of neurophysiological signal. Brain 
 % Topography 29 (2016). https://doi.org/10.1007/s10548-015-0448-0 
 % 
@@ -119,6 +119,9 @@ cfg.parameter = 'powspctrm';
 cfg.operation = 'x2-x1';
 osci = ft_math(cfg, frac, orig);
 
+% z-score using statistical bootstrapping
+osci.powspctrm = zcont_5(osci.powspctrm); 
+
 % detect peaks per electrode
 osci.pk.pk = cell(length(osci.label),1);
 osci.pk.fr = osci.pk.pk;
@@ -126,9 +129,6 @@ osci.pk.wd = osci.pk.fr;
 osci.theta = nan(length(osci.label),1);
 osci.alpha = osci.theta;
 osci.beta = osci.theta;
-
-% z-score using statistical bootstrapping
-osci.powspctrm = zcont_5(osci.powspctrm); 
 
 for e = 1:length(osci.label)
     [tmp_1, tmp_fr, tmp_wd, tmp_pk] = findpeaks(osci.powspctrm(e,:), osci.freq);
