@@ -6,8 +6,7 @@ Quickly adapting our behavior depends on mechanisms that open and close a metaph
 Our research aims to uncover mechanistic explanations of the neural basis of human behavior, that is, move from where to how. Our goals are multifaceted: (1) advance fundamental science by discovering new knowledge using rigorous, reproducible methods; and (2) advance translational applications in neurotechnology, precision medicine, and product development that are grounded in rigorous science. In this project, we showcase how approaching neuroscience as data science - with neurophysiological, neuroimaging, and behavioral datasets representing diverse data types, and analytics spanning signal processing, real-time behavior prediction, and graph theory - can address outstanding questions about information processing. Understanding how the human brain processes information can inform the design of artificial agents that are not just capable, but responsible.
 
 These scripts produce the results reported in:
-
-Johnson, EL, Lin, JJ, King-Stephens, D, Weber, PB, Laxer, KD, Saez, I, Girgis, F, D’Esposito, M, Knight, RT, Badre, D. A rapid theta network mechanism for flexible information encoding. _Nature Communications_ 14 (2023). [DOI](https://doi.org/10.1038/s41467-023-38574-7)
+- Johnson, EL, Lin, JJ, King-Stephens, D, Weber, PB, Laxer, KD, Saez, I, Girgis, F, D’Esposito, M, Knight, RT, Badre, D. A rapid theta network mechanism for flexible information encoding. _Nature Communications_ 14 (2023). [DOI](https://doi.org/10.1038/s41467-023-38574-7)
 
 Project data are available on [OSF](https://doi.org/10.17605/OSF.IO/RX2ZD). These data have been prepared for analysis using the [pipeline for iEEG data curation](https://github.com/elizljohnson-projects/pipeline-ieeg-data-curation.git).
 
