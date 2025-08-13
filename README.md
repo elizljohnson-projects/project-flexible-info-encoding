@@ -1,5 +1,4 @@
-# project-ieeg-info-encoding
-**A rapid theta network mechanism for flexible information encoding**
+## A rapid theta network mechanism for flexible information encoding
 
 Quickly adapting our behavior depends on mechanisms that open and close a metaphorical ‘gate’ to let only relevant information into working memory. Using direct brain recordings in neurosurgical patients (i.e., intracranial EEG/iEEG), we discovered neocortical brain networks that rapidly come in and out of sync to direct this gate – a role previously attributed to a subcortical region called the striatum. Findings reveal a neocortical gating mechanism and demonstrate how human behavior can emerge from interactions across brain networks. Press release by [Northwestern News](https://news.feinberg.northwestern.edu/2023/06/01/study-establishes-fluctuating-gating-mechanisms-supporting-flexible-behavior/).
 
